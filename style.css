@@ -1,0 +1,146 @@
+/* ===== EDIT COLORS HERE BESTIE ===== */
+
+:root {
+  --bg: #000000;
+  --card: #111111;
+  --border: #333333;
+  --blue: #0a84ff;
+  --green: #00a854;
+  --red: #ff3b30;
+  --orange: #ff5e00;
+  --text: #ffffff;
+  --gray: #888888;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 12px auto;
+  max-width: 600px;
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  margin: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--blue);
+  color: white;
+  font-size: 16px;
+}
+
+.ratioBox {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+.ratioBox video,
+.ratioBox canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+#qrcodeBox {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px auto;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myIdText {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  margin: 8px;
+}
+
+.alertBox {
+  padding: 12px;
+  border-radius: 12px;
+  margin: 10px 0;
+  font-weight: bold;
+  display: none;
+}
+
+.alertBox.person {
+  background: var(--red);
+  color: white;
+  animation: blink 0.5s infinite;
+}
+
+.alertBox.safe {
+  background: var(--green);
+  color: white;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#blackScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg);
+  z-index: 99;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#blackScreen.on {
+  display: flex;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #222;
+  border-radius: 20px;
+  font-size: 11px;
+  margin: 3px;
+}

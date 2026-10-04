@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="google-site-verification" content="kUoNEZyaHHgk7iwT_O8pBj2s8zlIZLvoUZk-4N_OeV8" />
+
+<meta name="msvalidate.01" content="C5AD6FC75478C789AB853C7C9F8C9426" />
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO -->
+
+<title>Zyvora CCTV AI Camera | Smart Local AI Security Camera</title>
+
+<meta name="description" content="Zyvora CCTV AI Camera is a smart browser-based security camera system using local AI object detection, live phone-to-laptop video streaming, QR connection, and Picture-in-Picture monitoring. Built by Zyvora for modern digital security solutions.">
+
+<meta name="keywords" content="Zyvora, Zyvora CCTV, Zyvora CCTV Camera, AI CCTV Camera, AI security camera, smart CCTV, local AI camera, browser CCTV, phone CCTV camera, laptop CCTV viewer, shop security camera, AI surveillance camera, CCTV Sierra Leone, security technology Sierra Leone, Zyvora AI">
+
+<meta name="author" content="Mustapha Gbanie">
+
+<meta name="creator" content="Zyvora">
+
+<meta name="publisher" content="Zyvora">
+
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<meta name="bingbot" content="index, follow">
+
+<link rel="canonical" href="https://z-tech-os.github.io/Zyvora-CCTV-Camera/">
+
+<!-- Theme / Browser -->
+
+<meta name="theme-color" content="#000000">
+
+<meta name="color-scheme" content="dark light">
+
+<meta name="application-name" content="Zyvora CCTV AI Camera">
+
+<meta name="apple-mobile-web-app-title" content="Zyvora CCTV">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- Open Graph / Facebook -->
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Zyvora CCTV AI Camera | Smart AI Security">
+
+<meta property="og:description" content="Monitor your shop with Zyvora CCTV AI Camera. Connect a phone camera to a laptop, stream live video, detect people with local AI, and monitor your space with Picture-in-Picture.">
+
+<meta property="og:url" content="https://z-tech-os.github.io/Zyvora-CCTV-Camera/">
+
+<meta property="og:site_name" content="Zyvora">
+
+<meta property="og:locale" content="en_US">
+
+<!-- Replace this with your actual social preview image when available -->
+
+<meta property="og:image" content="https://z-tech-os.github.io/Zyvora-CCTV-Camera/assets/zyvora-cctv-preview.jpg">
+
+<meta property="og:image:alt" content="Zyvora CCTV AI Camera smart security system">
+
+<meta property="og:image:type" content="image/jpeg">
+
+<!-- Twitter / X -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Zyvora CCTV AI Camera | Smart AI Security">
+
+<meta name="twitter:description" content="A browser-based AI CCTV camera system by Zyvora with local AI detection, phone-to-laptop streaming and Picture-in-Picture monitoring.">
+
+<meta name="twitter:image" content="https://z-tech-os.github.io/Zyvora-CCTV-Camera/assets/zyvora-cctv-preview.jpg">
+
+<meta name="twitter:image:alt" content="Zyvora CCTV AI Camera smart security system">
+
+<!-- Geographic / Business SEO -->
+
+<meta name="geo.region" content="SL">
+
+<meta name="geo.country" content="Sierra Leone">
+
+<meta name="language" content="English">
+
+<!-- Structured Data -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Zyvora CCTV AI Camera",
+  "alternateName": [
+    "Zyvora CCTV",
+    "Zyvora AI CCTV Camera",
+    "Zyvora Smart CCTV"
+  ],
+  "description": "A browser-based CCTV and AI security camera system by Zyvora that allows a phone camera to stream live video to a laptop while local AI detects people.",
+  "url": "https://z-tech-os.github.io/Zyvora-CCTV-Camera/",
+  "applicationCategory": "SecurityApplication",
+  "applicationSubCategory": "CCTV Camera",
+  "operatingSystem": "Web Browser",
+  "browserRequirements": "Requires a modern web browser with camera and WebRTC support.",
+  "author": {
+    "@type": "Person",
+    "name": "Mustapha Gbanie",
+    "url": "https://mustapha-official.github.io/Biography/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zyvora",
+    "url": "https://z-tech-os.github.io/Zyvora/"
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Zyvora"
+  },
+  "featureList": [
+    "Local AI object detection",
+    "Phone camera streaming",
+    "Laptop CCTV monitoring",
+    "QR code connection",
+    "Picture-in-Picture monitoring",
+    "Browser-based CCTV",
+    "WebRTC video streaming"
+  ],
+  "isAccessibleForFree": true
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/peerjs@1.5.3/dist/peerjs.min.js"></script>
+<script src="https://unpkg.com/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3/dist/coco-ssd.min.js"></script>
+</head>
+
+
+<body>
+<h2>📡 Zyvora Security CCTV AI</h2>
+<p><span class="badge"> Local AI</span><span class="badge">PiP Floating</span></p>
+
+<div class="card">
+<button class="primary" onclick="beLaptop()">YOUR LAPTOP (Video Preview)</button>
+<button class="primary" onclick="bePhone()">YOUR PHONE (AI Camera)</button>
+</div>
+
+<div class="card" id="laptopBox" style="display:none">
+<h3>Laptop Viewer</h3>
+<div id="qrArea"><div id="qrcodeBox"></div><div id="myIdText">----</div></div>
+<div class="ratioBox"><video id="remoteVideo" autoplay playsinline controls></video></div>
+<div id="laptopAlert" class="alertBox person">🚨 PERSON DETECTED</div>
+<div id="laptopSafe" class="alertBox safe">✅ Screen Empty</div>
+<p id="liveText" style="color:gray">Waiting...</p>
+<button style="background:var(--orange);color:white;width:90%" onclick="startPiP()">POP OUT - Watch over WhatsApp</button>
+<audio id="beep" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+</div>
+
+<div class="card" id="phoneBox" style="display:none">
+<h3>Phone AI Camera</h3>
+<div class="ratioBox"><video id="localVideo" autoplay muted playsinline></video><canvas id="localCanvas"></canvas></div>
+<p id="aiLoad">🧠 Loading AI...</p>
+<div id="phoneConnectArea"><input id="remoteId" placeholder="Laptop ID"><button class="primary" style="background:var(--green);width:90%" onclick="connectPhone()">✅ CONNECT</button></div>
+<div id="phoneAlert" class="alertBox person">🚨 PERSON AT SCREEN!</div>
+<p id="phoneStatus"></p>
+<button id="stealthBtn" style="background:#222;color:white;display:none;width:90%" onclick="toggleBlack()">🌑 Black Screen (AI Still Watching)</button>
+</div>
+
+<div id="blackScreen" onclick="toggleBlack()"><p style="font-size:50px">●</p><p style="color:#333">AI WATCHING</p><p id="blackAI" style="color:var(--red);font-size:12px"></p><p style="color:#222;font-size:11px;margin-top:20px">Tap to wake</p></div>
+
+<script src="script.js"></script>
+</body>
+</html>
